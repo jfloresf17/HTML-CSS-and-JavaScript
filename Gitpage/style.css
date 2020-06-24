@@ -1,0 +1,149 @@
+
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 25%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);  
+}
+  
+  /* When you mouse over the navigation links, change their color */
+  .container-head{
+    padding-top: 20px;
+    background-color: rgb(135,206,250);        
+    display: block;
+    height:100px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);  
+  }
+  .home button{
+    font-family: 'Segoe UI';
+    font-size: 250%;
+    border: darkgoldenrod;
+    background-color: rgb(135,206,250);    
+    margin: 0px 0px 10px 40px;
+  }
+  .home span a{
+    color: black;
+    float: right;
+    font-family: 'Segoe UI';
+    font-size: 200%;  
+    margin:  0px 80px 0px 0px;  
+    text-decoration: none;
+  }
+  .search-bar input[type=text]{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);  
+    padding: 3px;
+    border: darkgoldenrod;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+    border-radius: 10px;
+    margin-left: 35px;    
+  } 
+  .search-bar button{
+       background-color:  rgb(135,206,250);
+       border: none;
+       font-size: 110%;
+   } 
+    /* The navigation menu links */
+   .accordion {
+    background-color:#111;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  } 
+  .accordion a{
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-size: 15px;
+    color: #818181;
+    padding:  18px;          
+} 
+  .active , .accordion:hover {
+    background-color: #ccc;
+  }  
+  .accordion::before {
+    content: "\002B"; /* Unicode character for "plus" sign (+) */
+    font-size: 15px;
+    font-weight: bold;
+    color: #f1f1f1;  
+  }  
+  .active:before {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
+  }
+  .panel{
+    background-color: #f1f1f1;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;    
+    transition: max-height 0.2s ease-out;
+  }
+  .panel ul{
+  list-style:"\002B";
+  font-family: 'Segoe UI';
+  font-size: 15px;
+  color: #818181;
+  margin-top: 15px;  
+  }
+  .panel li{
+    margin: 10px 0;
+  }
+  .panel ul a{
+  text-decoration: none;
+  font-family: 'Segoe UI';
+  font-size: 15px;
+  color: #818181;
+  margin-left: 5px;  
+  }
+  .main-content{
+    height: 100%;
+    width: 74%;
+    float:right;
+  }
+  ul.breadcrumb {
+    list-style: none;
+  }
+  ul.breadcrumb li{
+    display: inline;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+  }
+  ul.breadcrumb li span{
+    display: inline;
+    font-size: 15px;
+    font-family: 'Segoe UI';
+  }
+  ul.breadcrumb li a{
+    color: #0275d8;
+    text-decoration: none;    
+  }
+  ul.breadcrumb li+li:before { 
+    padding:29%; 
+    content: "\00a0";    
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+  }
+  hr{
+    height:0.5px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+  .content-body a{
+    text-decoration: none;
+    display: inline;
+   }
+ .content-text{
+    font-family: 'Segoe UI';
+ }
